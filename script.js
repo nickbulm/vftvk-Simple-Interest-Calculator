@@ -6,10 +6,10 @@ function compute()
     let interest = principal * years * rate / 100
     let year = Number(new Date().getFullYear()) + years
 
-    document.getElementById("result").innerHTML =   `<span>If you deposit: $${principal}</span><br>
-                                                    <span>at an interest rate of: ${rate}</span><br>
-                                                    <span>You will receive an amount of: $${interest}</span><br>
-                                                    <span> in the year: ${year}</span>`
+    document.getElementById("result").innerHTML =   `If you deposit: <span class="number">$${principal}</span><br>
+                                                    at an interest rate of: <span class="number">${rate}</span><br>
+                                                    You will receive an amount of: <span class="number">$${interest}</span><br>
+                                                    in the year: <span class="number">${year}</span>`
 }
 function validate(e) {
     let principal = e.target.value
