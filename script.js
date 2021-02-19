@@ -12,10 +12,10 @@ function compute()
     } else {
         document.getElementById("compute").disabled = false
         document.getElementById("amountval").innerText = null
-        document.getElementById("result").innerHTML =   `If you deposit: <span class="number">$${principal}</span><br>
-                                                    at an interest rate of: <span class="number">${rate}</span><br>
-                                                    You will receive an amount of: <span class="number">$${interest}</span><br>
-                                                    in the year: <span class="number">${year}</span>`
+        document.getElementById("result").innerHTML =   `If you deposit: <mark>$${principal}</mark><br>
+                                                    at an interest rate of: <mark>${rate}</mark><br>
+                                                    You will receive an amount of: <mark>$${interest}</mark><br>
+                                                    in the year: <mark>${year}</mark>`
     }
 }
 function validate(e) {
